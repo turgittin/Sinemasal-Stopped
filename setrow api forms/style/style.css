@@ -1,0 +1,186 @@
+body {
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    font-size: 12px;
+    color: #000;
+    font-weight: normal;
+}
+
+* {
+    outline: none;
+}
+
+.newsletter_form-new {
+    background: url(../images/1.png) no-repeat center top;
+    width: 508px;
+    height: 421px;
+}
+
+.newsletter_form-new.basarili {
+    background: url(../images/2.png) no-repeat center top !important;
+    width: 508px;
+    height: 421px;
+}
+
+ 
+
+.newsletter_form-new h2 {
+    color: #E64097;
+    margin: 0;
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-left: 7px;
+}
+
+input.input-text, select, textarea {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    width: 200px;
+    padding: 4px;
+}
+
+input.input-text, textarea {
+    padding: 2px 4px;
+}
+
+input.input-text:focus {
+    border: 1px solid #E64097;
+}
+
+.newsletter_form-new table th {
+    text-align: left;
+    padding: 7px;
+}
+
+.newsletter_form-new table td {
+    text-align: left;
+    padding: 7px;
+}
+
+img {
+    border: none;
+}
+
+.message {
+    padding: 10px;
+    margin: 25px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    margin-left: 220px;
+}
+
+.message .text {
+    line-height: 20px;
+}
+
+.message .text .coupon_code {
+    background: #E64097;
+    color: #fff;
+    padding: 4px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+.gender_block {
+    margin-top: 70px;
+
+}
+
+.hidden-button {
+	background: none;
+	border: none;
+	width: 70px;
+	height: 34px;
+	cursor: pointer;
+}
+
+.input_box {
+
+}
+
+.input_box input[type="text"] {
+
+	background: none repeat scroll 0 0 transparent;
+	border: medium none;
+	color: #404040;
+	font-size: 13px;
+	font-weight: normal;
+	margin-left: 108px;
+	outline: medium none;
+	padding: 5px;
+	width: 196px;
+	margin-top: 17px;
+}
+
+.buttons {
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.social_link {
+    margin-top: 12px;
+}
+
+.altyazi {
+    margin-top: 0;
+    margin-right: 20px;
+    font-size: 12px;
+    text-align: right;
+    color: #4c9a96;
+    font-style: normal;
+}
+
+.altyazi a {
+    color: #D70C8C;
+    text-decoration: none;
+}
+
+.altyazi a:hover {
+    color: #000;
+}
+
+.terms {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.footer {
+    margin-top: 179px;
+    margin-left: 17px
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.alisverise-basla a {
+    display: block;
+    background:none;
+    width: 97px;
+    height: 20px;
+    margin-right: 16px;
+}
+
+
+.newsletter_form-new.basarili .footer  {
+    margin-top: 303px;
+}
