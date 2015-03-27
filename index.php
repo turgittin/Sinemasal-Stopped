@@ -66,23 +66,9 @@ $resimler = array(
 function pencereAc_400(url){
 window.open(url,'video','toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=400px,height=200px');
 }function dataSend(){
-var link = 'http://www.setrow.com/system/kisiekle.php?lang=Tr&a='+document.getElementById("adi").value+'&m='+document.getElementById("mailadres").value+'&gid='+document.getElementById("grupid").value+'&mk='+document.getElementById("mkodu").value;
+var link = 'http://www.setrow.com/system/kisiekle.php?lang=Tr&m='+document.getElementById("mailadres").value+'&gid='+document.getElementById("grupid").value+'&mk='+document.getElementById("mkodu").value;
 pencereAc_400(link);
 }</script>
-
-<span class="baslik3">Haber listemize kaydolarak tüm yeniliklerden haberdar olabilirsiniz.</span>
-
-<input style="border: 1px solid #A3A3A3;width: 120px;font-size: 8pt;color: #A3A3A3;" id="adi" name="adi" type="text" onblur="javascript:if(this.value == '') this.value = 'Adım Soyadım';" onfocus="javascript:if(this.value == 'Adım Soyadım') this.value = '';" value="Adım Soyadım"  />
-
-<input style="border: 1px solid #A3A3A3;width: 120px;font-size: 8pt;color: #A3A3A3;" id="mailadres" name="mailadres" type="text"  onblur="javascript:if(this.value == '') this.value = 'E-Posta Adresim';" onfocus="javascript:if(this.value == 'E-Posta Adresim') this.value = '';" value="E-Posta Adresim"  />
-
-
-<input id="grupid" name="grupid" type="hidden" value="14760" size="5" />
-
-<input id="mkodu" name="mkodu" type="hidden" value="688" size="5" />
-
-<input style="border: 1px solid #A3947D;width: 50px;font-size: 8pt;margin-left: 5px;" name="gonder" type="button" value="Ekle" onclick="javascript:dataSend();" />
-
 
     <div class="h">
       <div class="logo"></div>
@@ -94,14 +80,14 @@ pencereAc_400(link);
             <h3>Açılışımızı hatırlatabilmemiz için mail adresinizi bırakabilirsiniz.</h3>
             <div class="mtb">
               
-                
-                <input id="mailadres" name="mailadres" type="text"  onfocus="javascript:if(this.value == 'E-Posta Adresim') this.value = '';" class="subscribe-input" placeholder="E-posta adresinizi giriniz..." required="">
+
+<input type="email" id="mailadres" name="mailadres" class="subscribe-input" placeholder="E-posta adresinizi giriniz..." required="">
                 
                 <input id="grupid" name="grupid" type="hidden" value="14760" size="5" />
 
                 <input id="mkodu" name="mkodu" type="hidden" value="688" size="5" />
 
-                <input class='btn btn-conf btn-green' style="color:#000;"  name="gonder" type="button" onclick="javascript:dataSend();" >gönder</input>
+                <button class='btn btn-conf btn-green'  name="gonder" type="button" onclick="javascript:dataSend();" >gönder</button>
               
 
 
