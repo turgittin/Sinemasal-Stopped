@@ -77,7 +77,9 @@ pencereAc_400(link);
         <div class="row">
           <div class="col-md-8 col-md-offset-2 centered">
             <h1>18 Nisan 2015 <a href="http://www.tedxreset.com" target="_blank">TEDxReset</a> sunumumuzun ardından yenilenen yüzümüzle sizlerleyiz!</h1>
-            <h3>Açılışımızı hatırlatabilmemiz için mail adresinizi bırakabilirsiniz.</h3>
+            <h3>We will be back with our new version, following our TEDxReset presentation on 18 April 2015! </h3>
+            <h4>Açılışımızı hatırlatabilmemiz için mail adresinizi bırakabilirsiniz.</h4>
+            <h5>Please leave your e-mail address so that we can remind you about our launch.</h5>
             <div class="mtb">
               
 

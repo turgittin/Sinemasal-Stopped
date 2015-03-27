@@ -28,7 +28,8 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Lato', sans-serif;
-	font-weight: 300;
+    text-shadow: 2px 1px #343434;
+	/*font-weight: 300;*/
 }
 
 
@@ -140,6 +141,7 @@ input {
 @media screen and (max-width: 767px) {
 	.subscribe-input {
 		width: 100%;
+		color:#343434;
 	}
 }
 
@@ -173,7 +175,7 @@ input {
 
 .btn-green {
 	background: #f4f37f;
-	color: white
+	color: #343434;
 }
 
 /* HEADER SECTION */
