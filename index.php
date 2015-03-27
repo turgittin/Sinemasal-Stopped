@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -61,11 +61,23 @@ $resimler = array(
 
   <body>
 
+
+  <script type="text/javascript">
+function pencereAc_400(url){
+window.open(url,'video','toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=400px,height=200px');
+}function dataSend(){
+var link = 'http://www.setrow.com/system/kisiekle.php?lang=Tr&a='+document.getElementById("adi").value+'&m='+document.getElementById("mailadres").value+'&gid='+document.getElementById("grupid").value+'&mk='+document.getElementById("mkodu").value;
+pencereAc_400(link);
+}</script><span class="baslik3">Haber listemize kaydolarak tüm yeniliklerden haberdar olabilirsiniz.</span>
+<input style="border: 1px solid #A3A3A3;width: 120px;font-size: 8pt;color: #A3A3A3;" id="adi" name="adi" type="text" onblur="javascript:if(this.value == '') this.value = 'Adım Soyadım';" onfocus="javascript:if(this.value == 'Adım Soyadım') this.value = '';" value="Adım Soyadım"  />
+<input style="border: 1px solid #A3A3A3;width: 120px;font-size: 8pt;color: #A3A3A3;" id="mailadres" name="mailadres" type="text"  onblur="javascript:if(this.value == '') this.value = 'E-Posta Adresim';" onfocus="javascript:if(this.value == 'E-Posta Adresim') this.value = '';" value="E-Posta Adresim"  />
+<input id="grupid" name="grupid" type="hidden" value="14760" size="5" />
+<input id="mkodu" name="mkodu" type="hidden" value="688" size="5" />
+<input style="border: 1px solid #A3947D;width: 50px;font-size: 8pt;margin-left: 5px;" name="gonder" type="button" value="Ekle" onclick="javascript:dataSend();" />
+
         <?php
         if (isset($_POST['islem']) && $_POST['islem'] == 'kaydet' && isset($_POST['email'])) {
-          echo "islem basarisiz";
-          }  else{
-
+         
             function post_to_url($url) {
 
                 $post = curl_init();
@@ -85,9 +97,9 @@ $resimler = array(
  
  
 
-            $link_ekle = 'http://www2.setrow.com/m/system/api/adresislemleri/api.php?k=5lJ71AfQK9CKMieCzgrhRCSeJY2QQdNMonKfNQYnPpZrz2UU8c&i=adres_ekle&t=1&grupid=14760&adres=' . $email . '&isim=&cinsiyet='.$cinsiyet.'&dtarihi=&oalan1=&oalan2=&oalan3=&medenihali=&sehir='.$il.'&meslek=&ceptel=&sabittel=&adresbilgisi=&evliliktarihi=';
+            $link_ekle = 'http://www2.setrow.com/m/system/api/adresislemleri/api.php?k=5lJ71AfQK9CKMieCzgrhRCSeJY2QQdNMonKfNQYnPpZrz2UU8c&i=adres_ekle&t=1&grupid=14760&adres='.$email.'&isim=&cinsiyet=&dtarihi=&oalan1=&oalan2=&oalan3=&medenihali=&sehir=&meslek=&ceptel=&sabittel=&adresbilgisi=&evliliktarihi=&oalan4=&oalan5=&oalan6=&oalan7=&oalan8=&oalan9=&oalan10=&oalan11=&oalan12=&oalan13=&oalan14=&oalan15=';
       ///'http://www2.setrow.com/m/system/api/adresislemleri/api.php?k=5lJ71AfQK9CKMieCzgrhRCSeJY2QQdNMonKfNQYnPpZrz2UU8c&i=adres_ekle&t=1&grupid=14760&adres=' . $email . '&isim=&cinsiyet='.$cinsiyet.'&dtarihi=&oalan1=newsletter&oalan2=&oalan3=&medenihali=&sehir=&meslek=&ceptel=&sabittel=&adresbilgisi=&evliliktarihi=';
- 
+ var_dump($email);
             $response = post_to_url($link_ekle);
 
             $sonuc = strpos($response, '3');
